@@ -9,6 +9,7 @@ abstract class AbstractAnimal(age: Int, val name: String, var price: Double): An
                 throw IllegalArgumentException("Некорректный возраст")
             }
         }
+     // get() = field - геттер по умолчанию, не нужно указывать явно
         get(){
             println("Возраст")
             return field
