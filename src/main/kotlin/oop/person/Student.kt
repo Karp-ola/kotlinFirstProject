@@ -10,6 +10,7 @@ class Student(
     : Person(name, age), Occupation, Gradable{
 
     override var grades = mutableListOf<Int>()
+
     override fun introduce(){
         println("Меня зовут $name, мне $age лет и я учусь в $school школе")
     }
